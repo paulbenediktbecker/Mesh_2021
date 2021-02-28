@@ -28,7 +28,7 @@ Care&Share ist eine Plattform, basierend auf einer App, die es ermöglicht auf s
 
 * **VehicleShare**: Du benötigst dein Auto nur für die Fahrt zur Arbeit oder nur für Wochenendausflüge? Teile dein Auto mit anderen Menschen!
 	
-	Wozu?: Spart die Eigenanschaffung eines Autos.f
+	Wozu?: Spart die Eigenanschaffung eines Autos.
 	
 	Features: Gesamter Ablauf über die Care&Share App. Einfache Verfügbarkeitsanzeige per Standort von Autos in der Nähe. Einfaches Bezahlen via PayPal.
 
