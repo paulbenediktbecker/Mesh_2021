@@ -1,23 +1,26 @@
 # Backend service for e01
-This is the backend service for our platform.
-
-## Author
-This spring boot app has been developed by Florian Decker (@Kapitan_Floww on GitLab).
+In diesem Ordner befindet sich der Quellcode für das Backend Systems unserer Plattform.
 
 # Tech
-The backend service is build with the Java Spring framework.
-Currently it does provide the tech to add addresses and parkinglots for renting.
-Our client fetches the backend data using our API.
+Der Service wurde mithilfe des Java Spring Frameworks und Spring Boot entwickelt.
+Aktuell bietet er (nur) die Möglichkeit Parkplätze anzulegen, zu ändern und zu löschen. Mehr Funktionen für die Zukunft sind geplant.
+Die Daten sind mithilfe einer API abruf und veränderbar.
 
-## Concept
-The application distinguishes between 'Addresses' and 'Parkinglots'. Each address can have multiple parkinglots - up to 3 at the moment (set custom with property 'application.parking.parkinglots.maxnumber').
+## Konzept
+Die Applikation unterscheidet zwischen zwei Datenobjekten:
+* `Addresses` (Addressen) und
+* `Parkinglots` (Parkplätze)
+ 
+Dabei gilt zu beachten, dass jedes Addresse mehrere Parkplätze haben kann. Aktuell ist die Anzahl auf 3 Parkplätze pro Addresse festgelegt. Dies kann allerdings bequem über eine Spring Einstellung gesetzt werden (`application.parking.parkinglots.maxnumber`).
 
 ## API
-Once the service is started, the API can be reached on localhost:8080/parking/address
-Our API provides an total of 14 endpoints for adding addresses / parkinglots, changing them or removing them.
-All endpoints can be seen and tested using the OpenAPI/Swagger-Documentation that can be reached at 'localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/' once the application runs.
+Sobald die Applikation gestartet ist kann die API unter `localhost:8080/parking/address` erreicht werden.
+Sie biete aktuell 14 unterschiedliche Endpunkte um Addressen und Parkplätze zu erstellen, manipulieren, zu löschen oder abzurufen.
+Eine Liste der Endpunkte erhält man, indem man die Applikation startet und die API-Definition unter `localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/` öffnet.
 
-# Building and running the application
-This application requires Java 11 or newer to run.
-Simple build the application using 'Maven clean package'. Drop the generated 'SmartEnv-x.x.x.jar' in the '/target/' folder to an directory of your chosing and launch the app using 'java -jar SmartEnv-x.x.x.jar'.
+# Die Applikation bauen und Starten
+* Benötigt Java 11 oder höher.
+Die Applikation kann mithilfe von Maven gebaut werden: `Maven clean package`. 
+Im Anschluss kann die `SmartEnv-x.x.x.jar` vom `/target/` Ordner in ein beliebiges Verzeichnis geschoben werden.
+Um die App zu Starten kann folgender Befehl genutzt werden `java -jar SmartEnv-x.x.x.jar`.
 
