@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "application.parking.paytime",
+      "type": "java.lang.Integer",
+      "description": "The intervall in which a user will be charged for the parking lot."
+    }
+  ] }

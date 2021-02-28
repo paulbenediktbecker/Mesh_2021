@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.frontend.MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8D8D8"
+        android:padding="4dp"
+        android:scrollbars="vertical" />
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+        android:weightSum="8"
+        >
+
+
+        <ImageButton
+            android:id="@+id/BTNMap"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_map_black_24dp"
+
+            android:background="@drawable/roundedbutton"
+            android:layout_margin="10dp"
+            />
+    <ImageButton
+        android:id="@+id/BTNADD"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_gravity="end"
+        android:src="@drawable/ic_plus"
+        android:background="@drawable/roundedbutton"
+        android:layout_margin="10dp"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

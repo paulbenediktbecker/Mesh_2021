@@ -1,0 +1,7 @@
+application:
+  parking:
+    paytime: 10
+logging:
+  level:
+    de.dhbw.mesh.e01.SmartEnv: DEBUG
+    root: INFO
