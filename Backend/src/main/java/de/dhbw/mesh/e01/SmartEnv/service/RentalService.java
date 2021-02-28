@@ -7,5 +7,10 @@ import java.util.UUID;
  */
 public interface RentalService {
 
+    /**
+     * Toggle occupied status of {@link de.dhbw.mesh.e01.SmartEnv.domain.ParkingLot}.
+     * @param parkinglotIdentifier
+     * @return
+     */
     public boolean toggleOccupiedStatus(UUID parkinglotIdentifier);
 }
