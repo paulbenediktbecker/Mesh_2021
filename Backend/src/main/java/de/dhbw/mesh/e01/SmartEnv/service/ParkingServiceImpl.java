@@ -7,6 +7,7 @@ import de.dhbw.mesh.e01.SmartEnv.repository.AddressRepository;
 import de.dhbw.mesh.e01.SmartEnv.repository.ParkingLotRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;
@@ -25,6 +26,9 @@ public class ParkingServiceImpl implements ParkingService {
 
     @Autowired
     private ParkingLotRepository parkingLotRepository;
+
+    @Value("${application.parking.parkinglots.maxnumber}")
+    private int maxParking;
 
     @Override
     public Address createAddress(String city, String street, String zipcode, String geotag) {
@@ -120,8 +124,13 @@ public class ParkingServiceImpl implements ParkingService {
     public Address addParkingLot(UUID uuid, @Valid ParkingLotDTO parkingLotDTO) {
         Address address = getAddress(uuid);
 
-        if(address.getParkingLots().size() == 3)
-            throw new IllegalArgumentException("Address cannot have more than 3 address");
+        if(maxParking == 0) {
+            maxParking = 3;
+            log.warn("application.parking.parkinglots.maxnumber");
+        }
+
+        if(address.getParkingLots().size() == maxParking)
+            throw new IllegalArgumentException("Address cannot have more than " + maxParking + " address(es)");
 
         //Link parkinglot to address
         ParkingLot parkingLot = new ParkingLot();

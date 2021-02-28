@@ -1,7 +1,22 @@
 application:
   parking:
-    paytime: 10
+    paytime: 60
+    parkinglots:
+      maxnumber: 4
 logging:
   level:
     de.dhbw.mesh.e01.SmartEnv: DEBUG
     root: INFO
+server:
+  port: 8080
+# spring:
+#  datasource:
+#    url: jdbc:mariadb://floww-industries.de:3306/smartEnv?allowMultiQueries=true
+#    username: smartEnv
+#    password: hSphlEl6blrWqL/4
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MariaDB103Dialect
+#    hibernate:
+#      ddl-auto: none # Set to 'create' on first start

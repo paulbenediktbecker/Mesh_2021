@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.dhbw.mesh.e01</groupId>
 	<artifactId>SmartEnv</artifactId>
-	<version>0.1.0-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>SmartEnv</name>
 	<description>Backend-Service for a SmartCity solution</description>
 	<properties>
