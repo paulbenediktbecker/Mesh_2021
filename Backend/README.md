@@ -18,6 +18,8 @@ Sobald die Applikation gestartet ist kann die API unter `localhost:8080/parking/
 Sie biete aktuell 14 unterschiedliche Endpunkte um Addressen und Parkplätze zu erstellen, manipulieren, zu löschen oder abzurufen.
 Eine Liste der Endpunkte erhält man, indem man die Applikation startet und die API-Definition unter `localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/` öffnet.
 
+("localhost" kann dabei durch den aktuellen Host ersetzt werden)
+
 # Die Applikation bauen und Starten
 * Benötigt Java 11 oder höher.
 Die Applikation kann mithilfe von Maven gebaut werden: `Maven clean package`. 
