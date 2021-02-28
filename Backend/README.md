@@ -22,6 +22,7 @@ Eine Liste der Endpunkte erhält man, indem man die Applikation startet und die 
 
 # Die Applikation bauen und Starten
 * Benötigt Java 11 oder höher.
+
 Die Applikation kann mithilfe von Maven gebaut werden: `Maven clean package`. 
 Im Anschluss kann die `SmartEnv-x.x.x.jar` vom `/target/` Ordner in ein beliebiges Verzeichnis geschoben werden.
 Um die App zu Starten kann folgender Befehl genutzt werden `java -jar SmartEnv-x.x.x.jar`.
