@@ -3,6 +3,9 @@
 # Beschreibung
 Das ist das Repository der Gruppe e01 vom MESH Hackathon organisiert von der Stuv@DHBW.
 
+ <img src="https://user-images.githubusercontent.com/82976744/149840285-6672dd50-8863-4dac-b429-9dabcd804c7b.gif" width="200">|  <img src="https://user-images.githubusercontent.com/82976744/149841710-1ad80a4d-97d6-4c52-b502-3a7a3d2c0033.gif" width="200"> |  <img src="https://user-images.githubusercontent.com/82976744/149840498-efbaccc8-0ba2-4fd1-bc5c-0962eed50ea3.gif" width="200"> | <img src="https://user-images.githubusercontent.com/82976744/149842003-16a13e5a-fb10-4b1a-b243-f6fb9ff3a4c8.gif" width="200">
+
+
 ## Kurzbeschreibung
 _"Care&Share"_
 
